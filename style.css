@@ -43,7 +43,8 @@ img {
   width: 120px;
   height: 120px;
   border-radius: 100%;
-  box-shadow: #666 0 0 10px 3px;
+  transform: rotate(0deg);
+  transition: transform 1s;
 }
 #zt {
   max-width: 700px;
@@ -51,4 +52,13 @@ img {
   width: 90%;
   letter-spacing: 1px;
   line-height: 1.7;
+}
+img:hover {
+  transform: rotate(360deg);
+}
+.nihao {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  letter-spacing: 0.5em;
 }
